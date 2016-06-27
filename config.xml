@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.tom.todolist2"
+        versionCode = "10" 
+        version     = "1.0.0" 
+    >
+
+    <name>A To Do List Application</name>
+
+    <description>
+       An application to make a to do list
+    </description>
+
+    <author href="http://tomcanham.website" email="tascanham@gmail.com">
+        Tom Canham
+    </author>
+        <preference name="orientation" value="landscape" /><!-- Set view to only landscape-->
+        <icon src="icon.png" />
+</widget>

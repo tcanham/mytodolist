@@ -1,0 +1,41 @@
+<!--
+* Author: Thomas canham
+* Assignment: WE4Mobile Web Applications, Digital Skills Academy
+* Date : 2016/06/27
+* Ref: https://docs.angularjs.org/tutorial/step_06
+-->
+<!DOCTYPE html>
+<html lang="en" ng-app="toDo"><!--Use directive to add angular to the root element -->
+
+<head>
+    <title>My To Do List Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/angular.min.js"></script>
+    <script src="js/appCtr.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div ng-controller="toDoList" id="listHolder">
+        <h1>To Do List</h1>
+        <ul>
+            <li ng-repeat="listItem in listItems">{{listItem.todo_item}}<!--Use repeater to display list of items -->
+                <button class="btn" ng-click="remove($index)">Delete</button><!-- Use function to delete items from listItems-->
+            </li>
+            <li>
+                <input type="text" ng-model="input"><!-- 'Form' to add values to listitems -->
+                <button class="btn" id="addItem" ng-click="addItem()">Add Item</button>
+            </li>
+            <li class="errorMsg">{{Msg}}</li><!--Display a relevent message to user -->
+            <li>
+                <!--Add buttons to  trigger functions on a click event -->
+                <button class="btn" id="checkList" ng-click="checkList()">Check For a Saved List</button>
+                <button class="btn" id="loadLoad" ng-click="loadList()">load Saved List</button>
+                <button class="btn" id="saveList" ng-click="saveList()">Save List</button>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

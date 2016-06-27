@@ -1,0 +1,95 @@
+/*
+* Author: Thomas canham
+* Assignment: WE4Mobile Web Applications, Digital Skills Academy
+* Date : 2016/06/27
+* Ref: n/a
+*/
+
+/* Global styles*/
+*{
+	padding:0;
+	margin:0;
+}
+
+/* List styles*/
+
+#listHolder{
+	width:90%;
+	margin: 20px auto;
+	padding:10px 2%;
+	background:rgba(176,224,230,.25);
+	border:1px solid #B0BDE6;
+}
+
+#listHolder h1{
+	color:#E6B5B0;
+	width:90%;
+	margin:auto;
+	text-align:center;
+}
+
+ul{
+	list-style:none;
+}
+
+li{
+	width:90%;
+	margin:auto;
+	padding:1%;
+	background:#B0E6D6;
+	border:1px solid #B0BDE6;
+	min-height:20px;
+}
+
+
+input[type=text], textarea {
+	width:95%;
+}
+
+#addItem{
+	margin-top:1px;
+	height:30px;
+}
+
+.errorMsg{
+	color:red;
+	text-align:center;
+}
+
+.btn{
+	margin-left:2%;
+}
+
+
+/* Glow effect on focus*/
+input[type=text], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #ddd;
+}
+  
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(230, 181, 176, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(230, 181, 176, 1);
+}
+
+/* End of list styles*/
+
+/*----- Media queries--------*/
+
+@media only screen and (min-width : 995px) {
+	
+	input[type=text], textarea {
+	width:75%;
+	}
+	.btn{
+	float:right;
+}
+}
